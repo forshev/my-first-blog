@@ -1,5 +1,5 @@
     .page-header {
-            background-color: #ff9400;
+            background: linear-gradient(to bottom, #ffa84c 0%,#ff7b0d 100%);
             margin-top: 0;
             padding: 20px 20px 20px 40px;
         }
@@ -11,7 +11,7 @@
         }
 
         .content {
-            margin-left: 40px
+            margin-left: 350px;
             display: flex;
             min-height: 100vh;
             flex-direction: column;
@@ -62,7 +62,7 @@
         }
 
         .main-menu li {
-        width: calc(100% / 5);
+        width: calc(100% / 7);
         text-align: center;
         display: inline-block;
         margin-right: -4px;
@@ -71,12 +71,16 @@
         .main-menu a {
         display: inline-block;
         margin-right: -4px;
-        font-size: 18px;
+        font-size: 16px;
         background-color: transparent;
         text-decoration: none;
         color: #fff;
         text-transform: capitalize;
         border-bottom: 0;
+        }
+
+        .main-menu a:hover {
+        color: #696969;
         }
 
         .footer {
@@ -85,6 +89,7 @@
         height:70px;
         margin: auto;
         flex: 1;
+        margin-top: 10px;
         }
 
         .text-muted {
