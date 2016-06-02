@@ -16,6 +16,6 @@
         <a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
            {% endif %}
            <h1>{{ post.title }}</h1>
-           <p>{{ post.text|linebreaks }}</p>
+           <p>{{ post.text|safe }}</p>
        </div>
    {% endblock %}
