@@ -10,4 +10,17 @@
                 <p>{{ post.text|safe }}</p>
             </div>
         {% endfor %}
+        <div class="pages" align="center">
+        {% if posts.has_previous %}
+            <a href="?page={{ posts.previous_page_number }}">Previous</a>
+        {% endif %}
+
+    <span class="current">
+        Page {{ posts.number }} of {{ posts.paginator.num_pages }}.
+    </span>
+
+        {% if posts.has_next %}
+            <a href="?page={{ posts.next_page_number }}">Next</a>
+        {% endif %}
+      </div>
     {% endblock content %}
