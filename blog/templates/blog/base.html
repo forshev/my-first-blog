@@ -1,5 +1,7 @@
 {% load staticfiles %}
 
+<!DOCTYPE html>
+
 <html>
        <head>
          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -16,7 +18,14 @@
     {% else %}
     <a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
     {% endif %}
-           <h1><a href="/">Кафедра геоинформатики</a></h1>
+           <nav role="navigation">
+      <ul class="main-menu">
+        <li><a href="/">Главная страница</a></li>
+        <li><a href="#">О кафедре</a></li>
+        <li><a href="#">Список преподавателей</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
        </div>
        <div class="content container">
            <div class="row">
@@ -26,5 +35,12 @@
                </div>
            </div>
        </div>
+
+       <footer class="footer">
+            <div class="container">
+              <p class="text-muted">Place sticky footer content here.</p>
+            </div>
+          </footer>
+
    </body>
    </html>
