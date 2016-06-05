@@ -1,7 +1,9 @@
     .page-header {
-            background: linear-gradient(to bottom, #ffa84c 0%,#ff7b0d 100%);
+            background: linear-gradient(to bottom, #ffa84c 0%,#ff7b0d 70%);
             margin-top: 0;
             padding: 20px 20px 20px 40px;
+            border-bottom: #ff7b0d;
+            box-shadow: 0 0 4px;
         }
 
         .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -11,8 +13,9 @@
         }
 
         .content {
-            
+            background-color: #ffffff;
             display: flex;
+            width: 60%;
             min-height: 100vh;
             flex-direction: column;
         }
@@ -48,6 +51,7 @@
 
         .post {
             margin-bottom: 70px;
+            width: 150%;
         }
 
         .post h1 a, .post h1 a:visited {
@@ -55,45 +59,49 @@
         }
 
         .main-menu {
-        display: block;
-        margin: 0 auto;
-        background-color: transparent;
-        height: 30px;
+          display: block;
+          margin: 0 auto;
+          background-color: transparent;
+          height: 25px;
         }
 
         .main-menu li {
-        width: calc(100% / 7);
-        text-align: center;
-        display: inline-block;
-        margin-right: -4px;
+          width: calc(100% / 5);
+          text-align: center;
+          display: inline-block;
+          margin-right: -4px;
         }
 
         .main-menu a {
-        display: inline-block;
-        margin-right: -4px;
-        font-size: 16px;
-        background-color: transparent;
-        text-decoration: none;
-        color: #fff;
-        text-transform: capitalize;
-        border-bottom: 0;
+          display: inline-block;
+          margin-right: -4px;
+          font-size: 16px;
+          background-color: transparent;
+          text-decoration: none;
+          color: #fff;
+          text-transform: capitalize;
+          border-bottom: 0;
         }
 
         .main-menu a:hover {
-        color: #696969;
+          color: #696969;
+        }
+
+        .main-menu a:active {
+          color: #2F4F4F;
         }
 
         .footer {
-        background-color:#696969;
-        opacity: 0.8;
-        height:70px;
-        margin: auto;
-        flex: 1;
-        margin-top: 10px;
+          background-color:#696969;
+          opacity: 0.8;
+          height:70px;
+          margin: auto;
+          flex: 1;
+          margin-top: 10px;
         }
 
         .text-muted {
-        margin-left: 40px;
-        margin-top: 20px;
-        color: black;
+          margin-left: 40px;
+          margin-top: 20px;
+          color: black;
         }
