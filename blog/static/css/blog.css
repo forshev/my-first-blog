@@ -40,6 +40,7 @@
             flex-direction: column;
             margin-top: 0px;
             box-shadow: 0 0 1px;
+            padding-left: 30px;
         }
 
         body {
@@ -53,7 +54,7 @@
         }
 
         .date {
-            float: right;
+            float: left;
             color: #828282;
         }
 
