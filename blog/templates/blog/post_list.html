@@ -1,12 +1,13 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-<div class="greet">
+<div class="post">
+  <h2> Добро пожаловать на сайт кафедры геоинформатики УГГУ</h2>
+  <hr>
+  <h2>Последние новости</h2>
 </div>
-        <h2>Последние новости:</h2>
         {% for post in posts %}
             <div class="post">
-
                  <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
                 <p>{{ post.text|safe|linebreaks|truncatewords:175 }}</p>
                 <div class="date">
