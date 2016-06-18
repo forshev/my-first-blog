@@ -130,3 +130,7 @@
           border-width: 2px;
           border-color: black;
         }
+
+        .greet {
+          text-align: center;
+        }
