@@ -1,7 +1,7 @@
             @media screen and (max-width: 1100px) {
             .post {
               width: 100%;
-              margin-bottom: 70px;
+              margin-bottom: 50px;
             }
             .content {
               width: 75%;
@@ -11,7 +11,7 @@
             @media screen and (min-width: 1100px) {
             .post {
               width: 150%;
-              margin-bottom: 70px;
+              margin-bottom: 50px;
             }
             .content {
               width: 55%;
@@ -124,4 +124,9 @@
           margin-left: 80px;
           margin-top: 20px;
           color: black;
+        }
+
+        .myIMG {
+          border-width: 2px;
+          border-color: black;
         }

@@ -2,16 +2,17 @@
 
 {% block content %}
 <div class="greet">
-<h2>Последние новости:</h2>
 </div>
+        <h2>Последние новости:</h2>
         {% for post in posts %}
             <div class="post">
 
                  <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-                <p>{{ post.text|safe|linebreaks|truncatewords:200 }}</p>
+                <p>{{ post.text|safe|linebreaks|truncatewords:175 }}</p>
                 <div class="date">
                     {{ post.published_date }}
                 </div>
+                <hr>
             </div>
         {% endfor %}
         <div class="pages" align="center">
