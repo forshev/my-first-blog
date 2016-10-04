@@ -6,12 +6,13 @@ from .forms import PostForm
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from django.template import RequestContext
-from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
+from django.core.paginator import PageNotAnInteger, EmptyPage #, Paginator
+from blog.paginator import DiggPaginator as Paginator
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
-    paginator = Paginator(posts, 10)
-    page = request.GET.get('page')
+    paginator = Paginator(posts, 3, body=3, padding=1, margin=2)
+    page = request.GET.get('page', 1)
     try:
         posts = paginator.page(page)
     except PageNotAnInteger:
